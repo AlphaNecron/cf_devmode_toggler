@@ -51,11 +51,11 @@ int main(int argc, char **argv) {
     if (argc == 2) {
         string value = argv[1];
         if (toLower(value) == "on") {
-            if (sendRequest("on", email, zoneId, apiToken)) return 1;
-            return 0;
+            if (sendRequest("on", email, zoneId, apiToken)) return 0;
+            return 1;
         } else if (toLower(value) == "off") {
-            if (sendRequest("off", email, zoneId, apiToken)) return 1;
-            return 0;
+            if (sendRequest("off", email, zoneId, apiToken)) return 0;
+            return 1;
         }
     }
     printf("%s", "Usage: devmode-toggle on|off");
