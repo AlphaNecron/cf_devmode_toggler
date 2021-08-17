@@ -1,5 +1,5 @@
 # cf_devmode_toggler
-A simple C++ program that lets you toggle your domain development mode with one command.
+A simple C++ program that lets you toggle your Cloudflare domain development mode with one command.
 
 ### Installation guide
 - Download [devmode-toggle](https://github.com/AlphaNecron/cf_devmode_toggler/releases/latest/download/devmode-toggle) to somewhere.
