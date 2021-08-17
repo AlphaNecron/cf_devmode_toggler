@@ -20,3 +20,16 @@ cd build
 cmake ..
 make
 ```
+
+***
+#### Fix for `error while loading shared libraries: libcpr.so.1: cannot open shared object file: No such file or directory`
+```bash
+git clone https://github.com/whoshuu/cpr.git --branch 1.6.2 --single-branch # replace 1.6.2 with the latest tag.
+cd cpr
+cmake -DCMAKE_BUILD_TYPE=Release -DCPR_BUILD_TESTS=OFF -DCPR_FORCE_USE_SYSTEM_CURL=ON .
+make
+mkdir -p /usr/lib
+cp -r lib/libcpr* /usr/lib
+mkdir -p /usr/include
+cp -r include/cpr /usr/include
+```
