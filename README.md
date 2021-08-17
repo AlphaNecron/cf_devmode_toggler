@@ -2,7 +2,6 @@
 A simple C++ program that lets you toggle your domain development mode with one command.
 
 ### Installation guide
-- Build this repository: [cpr](https://github.com/whoshuu/cpr).
 - Download [devmode-toggle](https://github.com/AlphaNecron/cf_devmode_toggler/releases/latest/download/devmode-toggle) to somewhere.
 - Execute `chmod +x devmode-toggle`.
 - Set 3 variables: `ZONE_ID`, `API_TOKEN`, `EMAIL` in your terminal using `export` command.
